@@ -1,0 +1,13 @@
+<center>
+  <div> 
+    <h2>MY AMAZING EXPERIENCES</h2>
+    <% @events.each do |event| %>
+    <ul>
+      <%= link_to event.name, event_path(event) %><br><br>
+      <p class='tags'><%= link_to 'Ahh was not that memorable', event, :method => 'delete' %></p>
+    </ul>
+    <% end %>
+      <p class='tags'><%= link_to 'Lets Add to our Memory', new_event_path %></p>
+    </div>
+
+</center>
