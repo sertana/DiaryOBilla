@@ -3,11 +3,11 @@
     <h2>MY AMAZING EXPERIENCES</h2>
     <% @events.each do |event| %>
     <ul>
-      <b class='event'><%= link_to event.name, event_path(event) %></b>
-      <button><%= button_to 'Delete Event', event, :method => 'delete' %></button>
+      <span class='event'><%= link_to event.name, event_path(event) %></span>
+      <button><%= button_to 'Delete Event', event, :method => 'delete', :class =>'buttonTo' %></button>
     </ul>
     <% end %>
-      <button><%= link_to 'Add Event', new_event_path %></button>
+      <%= link_to 'Add Event', new_event_path, :class =>'buttonTo' %>
     </div>
 
 </center>

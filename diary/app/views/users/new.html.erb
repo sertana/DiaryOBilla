@@ -7,13 +7,15 @@
     placeholder: 'Username',
     required: true, 
     minlength: User::USERNAME_LENGTH.begin,
-    maxlength: User::USERNAME_LENGTH.end %><br><br>
+    maxlength: User::USERNAME_LENGTH.end, 
+    :class => 'input' %><br><br>
   <p class='tags'>Password:</p> <%= form.password_field :password,
       placeholder: 'password',
       required: true,
       minlength: User::PASSWORD_LENGTH.begin,
-      maxlength: User::PASSWORD_LENGTH.end %><br><br>
-  <%= submit_tag 'Create Account!' %>
+      maxlength: User::PASSWORD_LENGTH.end, 
+      :class => 'input' %><br><br>
+  <%= submit_tag 'Create Account!', :class =>'buttonTo' %>
   <% end %>
 
   <br>

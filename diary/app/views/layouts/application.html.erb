@@ -14,7 +14,7 @@
     <% if current_user %>
     <%= link_to current_user.username,
     events_path(current_user) %> is signed in<br>
-    <button><%= button_to 'Log Out', session_path, method: :delete %></button>
+    <%= button_to 'Log Out', session_path, method: :delete, :class => "buttonTo" %>
     <% end %>
 
     <% if flash[:notice].present? %>

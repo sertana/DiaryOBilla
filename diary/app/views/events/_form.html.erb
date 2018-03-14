@@ -1,11 +1,11 @@
 <center>
   <div>
     <%= form_for @event do |form| %>
-    <p class='tags'>Name of Event:</p> <%= form.text_area :name, placeholder: 'Name of Event', size:'50x2' %>
-    <p class='tags'>Where was I:</p> <%= form.text_area :venue, placeholder: 'Venue',  size:'50x2' %>
-    <p class='tags'>When was it:</p> <%= form.text_area :date, placeholder: 'Date', size:'50x2' %>
-    <p class='tags'>My Memory:</p> <%= form.text_area :description, size: "125x12" %><br>
-    <button><%= form.submit %></button>
+    <p class='tags'>Name of Event:</p> <%= form.text_field :name, placeholder: 'Name of Event',size:'40x1', :class => 'input' %>
+    <p class='tags'>Where was I:</p> <%= form.text_field :venue, placeholder: 'Venue',  size:'40x1',:class => 'input' %>
+    <p class='tags'>When was it:</p> <%= form.text_field :date, placeholder: 'Date', size:'40x1',:class => 'input' %>
+    <p class='tags'>My Memory:</p> <%= form.text_area :description, size: "80x12",:class => 'input' %><br>
+    <%= form.submit :class => 'buttonTo'%>
     <% end %>
   </div>
 </center>

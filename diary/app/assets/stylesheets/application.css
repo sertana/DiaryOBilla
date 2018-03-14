@@ -43,12 +43,12 @@ body {
   font-weight: bold;
 }
 button {
-  background-color: rgb(160,155,135);
+  background-color: rgb(230,226,203);
   color:white;
   border-radius: 10px;
 }
 .event {
-  border-width:3px;
+  border-width:5px;
   border-style: inset;
   font-size: 25px;
   font-family: 'Stalemate', cursive; 
@@ -63,4 +63,24 @@ h2 {
 }
 h1 {
   font-family: 'Great+Vibes', cursive;
+}
+a{
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Stalemate',cursive;
+  text-decoration: none;
+}
+.buttonTo {
+  font-size: 14px;
+  background-color: rgb(224, 220,202);
+  border-radius: 10px;
+  font-family: 'Great+Vibes', cursive;
+  font-weight: bold;
+}
+.input {
+  font-size: 18px;
+  background-color: rgb(234,232,215);
+  border-width: 4px;
+  border-style:inset;
 }
