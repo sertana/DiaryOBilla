@@ -75,6 +75,7 @@ a{
   font-size: 14px;
   background-color: rgb(224, 220,202);
   border-radius: 10px;
+  border: 1px solid black;
   font-family: 'Great+Vibes', cursive;
   font-weight: bold;
 }
