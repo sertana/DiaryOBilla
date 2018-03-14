@@ -14,8 +14,8 @@ class SessionsController < ApplicationController
 
     if user
       sign_in(user)
-      flash[:notice] = 'Hi, #{username}! You are signed in!'
-      redirect_to users_path
+      flash[:notice] =''
+      redirect_to events_path
     else
       flash[:error] = "User not found"
       @user = User.new(username: username)

@@ -1,11 +1,13 @@
+<link href="https://fonts.googleapis.com/css?family=Stalemate|Great+Vibes" rel="stylesheet">
 <center>
   <div>
-    <h1>Oh What a day</h1>
+<!--     <h1>Oh What a day</h1> -->
     <h2>What was it: <%= @event.name %></h2>
       <h2>Where was it : <%= @event.venue %></h2>
       <h2>When was it: <%= @event.date %></h2>
       <h2>MY Memory</h2>
-      <p><%= @event.description %></p>
-      <p class='tags'><%= link_to 'I may have missed something', edit_event_path %></p>
+      <div class='tag'><%= @event.description %></div>
+      <button><%= link_to 'Edit Event', edit_event_path%></button><br>
+      <button><%= link_to 'All Events', events_path %></button>
   </div>
 </center>

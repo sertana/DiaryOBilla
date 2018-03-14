@@ -17,7 +17,8 @@
   background-color: lightblue;
 }*/
 body {
-  background: lightblue;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/04/27/36/33583b1dbdb74e5.jpg');
+  background-size: cover;
 }
 .header {
   font-size: 60px;
@@ -29,10 +30,37 @@ body {
   border:1px solid black;
 }*/
 .tags {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-family: 'Great+Vibes', cursive;
   font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px;
+}
+.tag {
+  border-width:5px;
+  border-style: inset;
+  font-size: 40px;
+  font-family: 'Stalemate', cursive;
+  height: 50%;
+  width: 60%;
+  font-weight: bold;
+}
+button {
+  background-color: rgb(160,155,135);
+  color:white;
+  border-radius: 10px;
+}
+.event {
+  border-width:3px;
+  border-style: inset;
+  font-size: 25px;
+  font-family: 'Stalemate', cursive; 
+  font-weight: bold; 
+  height: 50px;
+  width: 300px;
+}
+h2 {
+  font-family: 'Great+Vibes', cursive;
+  font-size:40px;
+  margin:0px;
+}
+h1 {
+  font-family: 'Great+Vibes', cursive;
 }
