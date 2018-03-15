@@ -33,3 +33,6 @@ Ruby was used for the backend.
 Postgresql was used for the database.  
 CSS was used for styling.
 
+## GitHub Link
+[DiaryOBilla](https://github.com/sertana/DiaryOBilla)
+
