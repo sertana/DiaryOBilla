@@ -1,3 +1,6 @@
+# This was used from the auth example provided in class. .
+# Defining current user and finding  current user.
+
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 

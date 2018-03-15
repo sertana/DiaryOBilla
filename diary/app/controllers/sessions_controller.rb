@@ -1,3 +1,5 @@
+#This was adapted from the auth example provided
+#Defining method to sign and sign out.
 class SessionsController < ApplicationController
 
   before_action :ensure_signed_out, only: [:new, :create]

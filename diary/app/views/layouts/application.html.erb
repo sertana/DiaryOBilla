@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Diary</title>
     <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
+<body>
     <div class='header'>Diary-O-Billa</div>
-
+    <!-- The user and the logout button i visible in all pages -->
+    <!-- The codes were modified from the auth example provided to us -->
     <% if current_user %>
-    <%= link_to current_user.username,
-    events_path(current_user) %> is signed in<br>
-    <%= button_to 'Log Out', session_path, method: :delete, :class => "buttonTo" %>
-    <% end %>
-
-    <% if flash[:notice].present? %>
-    <div class='notice'>
-      <%= flash[:notice] %>
-    </div>
-    <% end %>
-
-    <% if flash[:error].present? %>
-    <div class='errors'>
-      <b>Errors:</b>
-      <%flash[:error] %>
-    </div>
-    <% end %>
-    
-    <%= yield %>
-
-    <% if current_user %>
-<!--     <br><br>
+        <%= link_to current_user.username,
+    events_path(current_user) %> is signed in
+            <br>
+            <%= button_to 'Log Out', session_path, method: :delete, :class => "buttonTo" %>
+                <% end %>
+                    <% if flash[:notice].present? %>
+                        <div class='notice'>
+                            <%= flash[:notice] %>
+                        </div>
+                        <% end %>
+                            <% if flash[:error].present? %>
+                                <div class='errors'>
+                                    <b>Errors:</b>
+                                    <%flash[:error] %>
+                                </div>
+                                <% end %>
+                                    <%= yield %>
+                                        <% if current_user %>
+                                            <!--     <br><br>
     
     <%=link_to 'Lets Add a Memory', new_event_path %> -->
-    <% end %>
+                                            <% end %>
+</body>
 
-
-  </body>
 </html>

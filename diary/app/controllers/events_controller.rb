@@ -1,3 +1,5 @@
+# Defining methods for CRUD for the events.Ensureing user is signed in
+
 class EventsController < ApplicationController
 
   before_action :ensure_signed_in

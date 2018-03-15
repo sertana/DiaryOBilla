@@ -11,3 +11,4 @@ class CreateEvent < ActiveRecord::Migration[5.1]
     end
   end
 end
+# creating table events and creating the columns and assigning a relationship with user

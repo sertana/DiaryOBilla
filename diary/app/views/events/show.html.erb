@@ -1,12 +1,14 @@
 <link href="https://fonts.googleapis.com/css?family=Stalemate|Great+Vibes" rel="stylesheet">
 <center>
-  <div>
-    <h2>What was it: <%= @event.name %></h2>
-      <h2>Where was it : <%= @event.venue %></h2>
-      <h2>When was it: <%= @event.date %></h2>
-      <h2>MY Memory</h2>
-      <div class='tag'><%= @event.description %></div>
-      <%= link_to 'Edit Event', edit_event_path, :class => 'buttonTo' %>
-      <%= link_to 'All Events', events_path, :class => 'buttonTo' %>
-  </div>
+    <div>
+        <h2>What was it: <%= @event.name %></h2>
+        <h2>Where was it : <%= @event.venue %></h2>
+        <h2>When was it: <%= @event.date %></h2>
+        <h2>MY Memory</h2>
+        <div class='tag'>
+            <%= @event.description %>
+        </div>
+        <%= link_to 'Edit Event', edit_event_path, :class => 'buttonTo' %>
+            <%= link_to 'All Events', events_path, :class => 'buttonTo' %>
+    </div>
 </center>

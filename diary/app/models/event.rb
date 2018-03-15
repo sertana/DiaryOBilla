@@ -1,3 +1,5 @@
+# The validation for each column and the relationship to user is done here
+
 class Event <ApplicationRecord
 belongs_to :user
 

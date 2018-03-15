@@ -1,13 +1,14 @@
 <center>
-  <div> 
-    <h2>MY AMAZING EXPERIENCES</h2>
-    <% @events.each do |event| %>
-    <ul>
-      <span class='event'><%= link_to event.name, event_path(event) %></span>
-      <button><%= button_to 'Delete Event', event, :method => 'delete', :class =>'buttonTo' %></button>
-    </ul>
-    <% end %>
-      <%= link_to 'Add Event', new_event_path, :class =>'buttonTo' %>
+    <div>
+        <h2>MY AMAZING EXPERIENCES</h2>
+        <% @events.each do |event| %>
+            <ul>
+                <span class='event'><%= link_to event.name, event_path(event) %></span>
+                <button>
+                    <%= button_to 'Delete Event', event, :method => 'delete', :class =>'buttonTo' %>
+                </button>
+            </ul>
+            <% end %>
+                <%= link_to 'Add Event', new_event_path, :class =>'buttonTo' %>
     </div>
-
 </center>

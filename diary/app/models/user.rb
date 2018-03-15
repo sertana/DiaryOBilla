@@ -1,3 +1,6 @@
+# This was taken from the auth example provided. The lenght of the username, password and its
+# validation are defined. Verifying username and password.
+
 class User < ApplicationRecord
   PASSWORD_LENGTH = (6..25)
   USERNAME_LENGTH = (5..15)

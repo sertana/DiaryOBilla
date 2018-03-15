@@ -1,15 +1,22 @@
 <center>
-  <body>
-  <div>
-  <h2> Sign in! </h2>
-  <%= form_for :user, url: session_path do |form| %>
-  <p class='tags'>Username:</p> <%= form.text_field :username, placeholder: 'Username', required:true, :class =>'input' %><br><br>
-  <p class='tags'>Password:</p> <%= form.password_field :password, placeholder: 'password', required: true, :class =>'input' %><br><br>
-  <%= submit_tag 'Sign in!', :class =>'buttonTo' %>
-  <% end %>
 
-  <br>
-  <span class='tags'>New user? </span><%= link_to 'Create an account', new_user_path %>
-</div>
-</body>
+    <body>
+        <div>
+            <h2> Sign in! </h2>
+            <%= form_for :user, url: session_path do |form| %>
+                <p class='tags'>Username:</p>
+                <%= form.text_field :username, placeholder: 'Username', required:true, :class =>'input' %>
+                    <br>
+                    <br>
+                    <p class='tags'>Password:</p>
+                    <%= form.password_field :password, placeholder: 'password', required: true, :class =>'input' %>
+                        <br>
+                        <br>
+                        <%= submit_tag 'Sign in!', :class =>'buttonTo' %>
+                            <% end %>
+                                <br>
+                                <span class='tags'>New user? </span>
+                                <%= link_to 'Create an account', new_user_path %>
+        </div>
+    </body>
 </center>

@@ -1,3 +1,5 @@
+# The auth was adapted from the auth example provided.
+# Defining methods to create and show users
 class UsersController < ApplicationController
 
   before_action :ensure_signed_out, only: [:new, :create]
@@ -12,7 +14,6 @@ class UsersController < ApplicationController
 
     if @user.save
       sign_in(@user)
-      # flash[:notice] = "You are signed in!"
       redirect_to events_path
     else
       flash[:error] = @user.errors.full_messages.join(', ')
