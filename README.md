@@ -36,3 +36,11 @@ CSS was used for styling.
 ## GitHub Link
 [DiaryOBilla](https://github.com/sertana/DiaryOBilla)
 
+## Heroku Link
+[diaryobilla](https://diaryobilla.herokuapp.com/)
+
+## Challenges and Reach Goals
+
+The major challenge was to incorporate Auth to the app. It took me a lot of time to figure out how to have user create an account, sign in and log their events. The styling with html.erb is a little different from reqular HTML, so that was another challenge in itself. I think I have my reach goals figured out. I just need a little more time to work on it. 
+I definitely need to better understand the deployment to heroku.
+
